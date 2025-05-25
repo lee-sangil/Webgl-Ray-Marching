@@ -1,14 +1,14 @@
-const vertex = /* glsl */ `
+const vertex = /* glsl */ `#version 300 es
 
 precision mediump float;
 
-attribute vec2 a_position;
-attribute vec3 a_normal;
+in vec2 a_position;
+in vec3 a_normal;
 
 // uniform vec2 u_resolution;
 
-varying vec2 v_position;
-varying vec3 v_normal;
+out vec2 v_position;
+out vec3 v_normal;
 
 void main() {
     // 위치를 픽셀에서 0.0과 1.0사이로 변환

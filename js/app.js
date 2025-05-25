@@ -9,7 +9,7 @@ canvas.style.width = '100%';
 canvas.style.height = '100%';
 
 // get webgl context
-const gl = canvas.getContext('webgl');
+const gl = canvas.getContext('webgl2');
 if (!gl) alert('WebGL is not supported by your browser');
 
 // get dpr value
